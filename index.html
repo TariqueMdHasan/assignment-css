@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">Remember<span>That</span></a>
+            <img src="images/menu.svg" alt="menu image" class="mobile-menu" id="mobile-menu" >
+
+            <nav>
+                <img id="close" class="close" src="images/exit.svg" alt="Close Navigation">
+                <ul class="nav-nav-primary">
+                    <li><a >Home</a></li>
+                    <li><a >Features</a></li>
+                    <li><a >Pricing</a></li>
+                </ul>
+                <ul class="nav-nav-secondary">
+                    <li><a >Contact</a></li>
+                    <li class="nav-go-premium" ><a >Go Premium</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="main-top-content">
+                <p>It's Nitty & Gritty</p>
+                <h1>A Task App That Doesn't Stink</h1>
+                <div>
+                    <a href="#" class="tryFree">Try for free</a>
+                    <a href="#" class="watch-video">
+                        <img src="images/watch.svg" alt="video watch">
+                        watch a video
+                    </a>
+                </div>
+            </div>
+            <div class="main-left">
+                <img src="images/illustration.svg" alt="hero images shows illustration of the website">
+            </div>
+        </section>
+        <section class="features">
+            <div class="features-container">
+                <ul class="features-list">
+                    <li>Unlimited Tasks</li>
+                    <li>SMS Task Reminders</li>
+                    <li>Confetti Explosions upon Task Completions</li>
+                    <li>Social Media Announcements</li>
+                    <li>Real Time Collaboration</li>
+                    <li>Other awesome features</li>
+                </ul>
+                <img src="images/holding-phone.jpg" alt="Man holding phone">
+            </div>
+        </section>
+        <section class="testimonials">
+                <ul>
+                    <li>
+                        <img src="images/person.jpg" alt="a human face">
+                        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quam odio, nemo excepturi dolor suscipit totam earum explicabo distinctio quas ullam possimus, ad temporibus in labore facilis ut! Perferendis, animi.</blockquote>
+                        <cite>- Human Being</cite>
+                    </li>
+                    <li>
+                        <img src="images/person.jpg" alt="a human face">
+                        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quam odio, nemo excepturi dolor suscipit totam earum explicabo distinctio quas ullam possimus, ad temporibus in labore facilis ut! Perferendis, animi.</blockquote>
+                        <cite>- Human Being</cite>
+                    </li>
+                    <li>
+                        <img src="images/person.jpg" alt="a human face">
+                        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quam odio, nemo excepturi dolor suscipit totam earum explicabo distinctio quas ullam possimus, ad temporibus in labore facilis ut! Perferendis, animi.</blockquote>
+                        <cite>- Human Being</cite>
+                    </li>
+                </ul>
+        </section>
+        <section class="contact">
+            <div class="form-container">
+                <h2>Contact</h2>
+                <form action="submit">
+                    <label for="name" class="form-name">Name</label>
+                    <input type="text" class="form-name-input" id="name" >
+                    <label for="message" class="message">Message</label>
+                    <textarea name="message" id="message" class="message" cols="30" rows="10" ></textarea> 
+                    <input type="submit" value="Send Message" class="send-btn" >
+                </form>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26430.393553120906!2d-118.43209796322542!3d34.10028430183922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc35fbd217ef%3A0xcf1ef9352700d95c!2sBeverly%20Hills%2C%20CA%2090210!5e0!3m2!1sen!2sus!4v1611702818717!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const menu = document.getElementById("mobile-menu")
+            nav = document.querySelector("nav")
+            closeBtn = document.getElementById("close");
+
+        menu.addEventListener("click", () => {
+            nav.style.display = 'block';
+        })
+
+        closeBtn.addEventListener("click", () => {
+            nav.style.display = 'none';
+        })
+    </script>
+</body>
+</html>
